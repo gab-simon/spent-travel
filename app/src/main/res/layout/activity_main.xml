@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/edit_distance"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/distance"
+       android:inputType="numberDecimal"
+       android:fontFamily="monospace"
+       android:autofillHints="" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:text="@string/total_kilometers" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:fontFamily="monospace"
+        android:autofillHints="" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:text="@string/price_per_liter" />
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/autonomy"
+        android:fontFamily="monospace"
+        android:inputType="numberDecimal"
+        android:autofillHints="" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:text="@string/km_per_liter" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/total_expense_of" />
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:padding="4dp"
+        android:text="@string/amount" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/calculate" />
+
+</LinearLayout>
